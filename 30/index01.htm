@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html lang="en-US">
+<head> 
+<title>Sun Microsystems Java Business Integration Technology</title>
+<meta name="keywords" content="sun microsystems, sun, java, java computing, solaris, sparc, unix, jini, computer systems, server, mission critical, RAS, high availability, cluster, workgroup server, desktop, workstation, storage, backup solutions, network computer, network computing, hardware, software, service, consulting, support, training, compiler, jdk, technical computing, scientific computing, high performance, enterprise computing, staroffice, starportal, sun ray">
+<meta name="description" content="Sun Microsystems, Inc. The Network Is The Computer[tm].">
+<meta http-equiv="content-language" content="en-US">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" media="all" type="text/css" href="../css/default.css">
+<!--stopindex-->
+</head>
+<script language="JavaScript" TYPE="text/javascript">
+function SwitchImg()
+{ //start
+  var rem, keep=0, store, obj, switcher=new Array, history=document.Data;
+    for (rem=0; rem < (SwitchImg.arguments.length-2); rem+=3) {
+    	store = SwitchImg.arguments[(navigator.appName == 'Netscape')?rem:rem+1];
+    if ((store.indexOf('document.layers[')==0 && document.layers==null) ||
+        (store.indexOf('document.all[')==0 && document.all==null))
+         store = 'document'+store.substring(store.lastIndexOf('.'),store.length);
+         obj = eval(store);
+    if (obj != null) {
+   	   switcher[keep++] = obj;
+      switcher[keep++] = (history==null || history[keep-1]!=obj)?obj.src:history[keep];
+      obj.src = SwitchImg.arguments[rem+2];
+  } }
+  document.Data = switcher;
+} //end
+
+function RestoreImg()
+{ //start
+  if (document.Data != null)
+    for (var rem=0; rem<(document.Data.length-1); rem+=2)
+      document.Data[rem].src=document.Data[rem+1];
+} //end
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+	function open_new_win(url)
+  {
+    newWindow = window.open(url,"popup","width=400,height=250,RESIZABLE=NO,SCROLLBARS=YES,STATUS=YES,MENUBAR=NO,TOOLBAR=NO")
+  } // open_new_win()
+</SCRIPT>
+  <body bgcolor="#ffffff" CLASS="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+	<table width="790" cellspacing="0" cellpadding="0" border="0">
+	  <tr>
+		<td width="790" background="../images/navtop3.gif" valign="top"><img src="../images/a.gif" width="790" height="89" name="myimg1" border="0" usemap="#navtop"></td>
+		<map name="navtop">
+		<area shape=rect coords="15,15 285,33" href="../index.htm" title="Homepage" onMouseOut="RestoreImg()" onMouseOver="SwitchImg('document.myimg1','document.myimg1','../images/navtopo.gif')">
+		<area shape=rect coords="1,42 106,65" href="../10/index.htm" onMouseOut="RestoreImg()" onMouseOver="SwitchImg('document.myimg1','document.myimg1','../images/navtop1o.gif')">
+		<area shape=rect coords="107,42 235,65" href="../20/index.htm" onMouseOut="RestoreImg()" onMouseOver="SwitchImg('document.myimg1','document.myimg1','../images/navtop2o.gif')">
+		<area shape=rect coords="236,42 323,65" href="../30/index.htm" onMouseOut="RestoreImg()" onMouseOver="SwitchImg('document.myimg1','document.myimg1','../images/navtop3o.gif')">
+		</map>
+	  </tr>
+	</table>
+	<table width="790" background="images/1bg_m0.gif" cellspacing="0" cellpadding="0" border="0">
+	  <tr>
+		<td width="780" valign="top"><img src="../images/a.gif" width="780" height="70" name="myimg3" border="0" usemap="#button2"></td>
+		<map name="button2">
+		<area shape=rect coords="588,46 636,60" href='javascript:open_new_win("index03.htm?intBack=1")' onMouseOut="RestoreImg()" onMouseOver="SwitchImg('document.myimg3','document.myimg3','images/button03.gif')">
+		</map>
+		<td width="10" valign="top"><img src="../images/a.gif" width="10" height="1"></td>
+	  </tr>
+	  <tr>
+		<td width="780" valign="top">
+<div class="main31">	
+<ilayer name="scroll1" width="740" height="350" clip="0,0,740,350">
+<layer name="scroll2" width="740" height="350" bgColor="#ffffff">
+<div id="scroll3" style="width:740px;height:350px;background-color:#ffffff;overflow:scroll">
+<div class="main31a">SUN IS WILLING TO LICENSE THIS SPECIFICATION TO YOU ONLY UPON THE CONDITION THAT YOU ACCEPT ALL OF THE TERMS CONTAINED IN THIS LICENSE AGREEMENT ("AGREEMENT").
+PLEASE READ THE TERMS AND CONDITIONS OF THIS LICENSE CAREFULLY. BY DOWNLOADING THIS SPECIFICATION, YOU ACCEPT THE TERMS AND CONDITIONS OF THIS LICENSE AGREEMENT.
+IF YOU ARE NOT WILLING TO BE BOUND BY ITS TERMS, SELECT THE "DECLINE" BUTTON AT THE BOTTOM OF THIS PAGE AND THE DOWNLOADING PROCESS WILL NOT CONTINUE.<br><br>
+
+Specification: JSR 208: Java Business Integration<br>
+Specification (JBI) 1.0 Specification<br>
+("Specification")<br><br>
+
+Status: Proposed Final Draft<br><br>
+
+Release: May 9, 2005<br><br>
+
+Copyright 2005 Sun Microsystems, Inc.<br>
+4150 Network Circle, Santa Clara, California 95054,<br> 
+U.S.A<br> 
+All rights reserved.<br><br>
+
+NOTICE: The Specification is protected by copyright and the information described therein may be protected by one or more U.S. patents, foreign patents, or pending applications.
+Except as provided under the following license, no part of the Specification may be reproduced in any form by any means without the prior written authorization of Sun Microsystems, Inc. ("Sun") and its licensors, if any.
+Any use of the Specification and the information described therein will be governed by the terms and conditions of this Agreement.<br><br> 
+
+Subject to the terms and conditions of this license, Sun hereby grants you a fully-paid, non-exclusive, non-transferable, limited license (without the right to sublicense) under Sun's intellectual property rights to review the Specification only for the purposes of evaluation.
+This license includes the right to discuss the Specification (including the right to provide limited excerpts of text to the extent relevant to the point[s] under discussion) with other licensees (under this or a substantially similar version of this Agreement) of the Specification.
+Other than this limited license, you acquire no right, title or interest in or to the Specification or any other Sun intellectual property, and the Specification may only be used in accordance with the license terms set forth herein.
+This license will expire on the earlier of: (i) two (2) years from the date of Release listed above; (ii) the date on which the final version of the Specification is publicly released; or (iii) the date on which the Java Specification Request (JSR) to which the Specification corresponds is withdrawn.
+In addition, this license will terminate immediately without notice from Sun if you fail to comply with any provision of this license.Upon termination, you must cease use of or destroy the Specification.<br><br>
+
+TRADEMARKS: No right, title, or interest in or to any trademarks, service marks, or trade names of Sun, Sun's licensors, Specification Lead or the Specification Lead's licensors is granted hereunder.
+Sun, Sun Microsystems, the Sun logo, Java, J2SE, J2EE, J2ME, Java Compatible, the Java Compatible Logo, and the Java Coffee Cup logo are trademarks or registered trademarks of Sun Microsystems, Inc. in the U.S. and other countries.<br><br>
+
+DISCLAIMER OF WARRANTIES: THE SPECIFICATION IS PROVIDED "AS IS" AND IS EXPERIMENTAL AND MAY CONTAIN DEFECTS OR DEFICIENCIES WHICH CANNOT OR WILL NOT BE CORRECTED BY SUN.
+SUN MAKES NO REPRESENTATIONS OR WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT THAT THE CONTENTS OF THE SPECIFICATION ARE SUITABLE FOR ANY PURPOSE OR THAT ANY PRACTICE OR IMPLEMENTATION OF SUCH CONTENTS WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADE SECRETS OR OTHER RIGHTS.
+This document does not represent any commitment to release or implement any portion of the Specification in any product.<br><br>
+
+THE SPECIFICATION COULD INCLUDE TECHNICAL INACCURACIES OR TYPOGRAPHICAL ERRORS. CHANGES ARE PERIODICALLY ADDED TO THE INFORMATION THEREIN; THESE CHANGES WILL BE INCORPORATED INTO NEW VERSIONS OF THE SPECIFICATION, IF ANY.
+SUN MAY MAKE IMPROVEMENTS AND/OR CHANGES TO THE PRODUCT(S) AND/OR THE PROGRAM(S) DESCRIBED IN THE SPECIFICATION AT ANY TIME.
+Any use of such changes in the Specification will be governed by the then-current license for the applicable version of the Specification.<br><br>
+
+LIMITATION OF LIABILITY: TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL SUN OR ITS LICENSORS BE LIABLE FOR ANY DAMAGES, INCLUDING WITHOUT LIMITATION, LOST REVENUE, PROFITS OR DATA, OR FOR SPECIAL, INDIRECT, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF OR RELATED TO ANY FURNISHING, PRACTICING, MODIFYING OR ANY USE OF THE SPECIFICATION, EVEN IF SUN AND/OR ITS LICENSORS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.<br><br>
+
+You will hold Sun (and its licensors) harmless from any claims based on your use of the Specification for any purposes other than the limited right of evaluation as described above, and from any claims that later versions or releases of any Specification furnished to you are incompatible with the Specification provided to you under this license.<br><br>
+
+RESTRICTED RIGHTS LEGEND: If this Software is being acquired by or on behalf of the U.S. Government or by a U.S. Government prime contractor or subcontractor (at any tier), then the Government's rights in the Specification and accompanying documentation shall be only as set forth in this license; this is in accordance with 48 C.F.R. 227.7201 through 227.7202-4 (for Department of Defense (DoD) acquisitions) and with 48 C.F.R. 2.101 and 12.212 (for non-DoD acquisitions).<br><br>
+
+REPORT: You may wish to report any ambiguities, inconsistencies or inaccuracies you may find in connection with your evaluation of the Specification ("Feedback").
+To the extent that you provide Sun with any Feedback, you hereby: (i) agree that such Feedback is provided on a non-proprietary and non-confidential basis, and (ii) grant Sun a perpetual, non-exclusive, worldwide, fully paid-up, irrevocable license, with the right to sublicense through multiple levels of sublicensees, to incorporate, disclose, and use without limitation the Feedback for any purpose related to the Specification and future versions, implementations, and test suites thereof.<br><br>
+
+GENERAL TERMS: Any action related to this Agreement will be governed by California law and controlling U.S. federal law. The U.N. Convention for the International Sale of Goods and the choice of law rules of any jurisdiction will not apply.<br><br>
+
+The Specification is subject to U.S. export control laws and may be subject to export or import regulations in other countries.
+Licensee agrees to comply strictly with all such laws and regulations and acknowledges that it has the responsibility to obtain such licenses to export, re-export or import as may be required after delivery to Licensee.<br><br>
+
+Neither party may assign or otherwise transfer any of its rights or obligations under this Agreement, without the prior written consent of the other party, except that Sun may assign this Agreement to an affiliated company.<br><br>
+
+This Agreement is the parties' entire agreement relating to its subject matter.
+It supersedes all prior or contemporaneous oral or written communications, proposals, conditions, representations and warranties and prevails over any conflicting or additional terms of any quote, order, acknowledgment, or other communication between the parties relating to its subject matter during the term of this Agreement. 
+No modification to this Agreement will be binding, unless in writing and signed by an authorized representative of each party.<br><br>
+
+(Sun.pSpec.license.11.14.2003)</div>
+</div>
+</layer>
+</ilayer>
+<script>
+var nsstyle='display:""'
+if (document.layers)
+var scrolldoc=document.scroll1.document.scroll2
+function up(){
+if (!document.layers) return
+if (scrolldoc.top<0)
+scrolldoc.top+=10
+temp2=setTimeout("up()",50)
+}
+function down(){
+if (!document.layers) return
+if (scrolldoc.top-150>=scrolldoc.document.height*-1)
+scrolldoc.top-=10
+temp=setTimeout("down()",50)
+}
+
+function clearup(){
+if (window.temp2)
+clearInterval(temp2)
+}
+
+function cleardown(){
+if (window.temp)
+clearInterval(temp)
+}
+</script>
+<span style="display:none" style=&{nsstyle};><a href="#" onMousedown="up()" onMouseup="clearup()" onClick="return false" onMouseout="clearup()">Up</a> | 
+<a href="#" onMousedown="down()" onMouseup="cleardown()" onClick="return false" onMouseout="cleardown()">Down</a> | 
+<a href="#" onClick="if (document.layers) scrolldoc.top=0;return false">Top</a> | 
+<a href="#" onClick="if (document.layers) scrolldoc.top=scrolldoc.document.height*(-1)+150;return false">Bottom</a></span></div>
+		</td>
+		<td width="10" valign="top"><img src="../images/a.gif" width="10" height="350"></td>
+	  </tr>
+	  <tr>
+		<td width="780" valign="top"><img src="../images/a.gif" width="780" height="46" name="myimg2" border="0" usemap="#button"></td>
+		<map name="button">
+		<area shape=rect coords="30,10 92,29" href="../resource/JBI75sol.zip" target="_new" onMouseOut="RestoreImg()" onMouseOver="SwitchImg('document.myimg2','document.myimg2','images/button01.gif')">
+		<area shape=rect coords="111,10 165,29" href="index.htm" onMouseOut="RestoreImg()" onMouseOver="SwitchImg('document.myimg2','document.myimg2','images/button02.gif')">
+		</map>
+		<td width="10" valign="top"><img src="../images/a.gif" width="10" height="1"></td>
+	  </tr>
+	</table>
+	<table width="790" cellspacing="0" cellpadding="0" border="0">
+	  <tr>
+		<td width="790" valign="top"><img src="../images/navbot.gif" width="790" height="25" border="0"></td>
+	  </tr>
+	</table>
+  </body>
+</html>

@@ -1,81 +1,173 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
-<html lang="en-US">
-<head> 
-<title>Sun Microsystems Java Business Integration Technology</title>
-<meta name="keywords" content="sun microsystems, sun, java, java computing, solaris, sparc, unix, jini, computer systems, server, mission critical, RAS, high availability, cluster, workgroup server, desktop, workstation, storage, backup solutions, network computer, network computing, hardware, software, service, consulting, support, training, compiler, jdk, technical computing, scientific computing, high performance, enterprise computing, staroffice, starportal, sun ray">
-<meta name="description" content="Sun Microsystems, Inc. The Network Is The Computer[tm].">
-<meta http-equiv="content-language" content="en-US">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" media="all" type="text/css" href="css/default.css">
-<!--stopindex-->
-</head>
-<script language="JavaScript" TYPE="text/javascript">
-function SwitchImg()
-{ //start
-  var rem, keep=0, store, obj, switcher=new Array, history=document.Data;
-    for (rem=0; rem < (SwitchImg.arguments.length-2); rem+=3) {
-    	store = SwitchImg.arguments[(navigator.appName == 'Netscape')?rem:rem+1];
-    if ((store.indexOf('document.layers[')==0 && document.layers==null) ||
-        (store.indexOf('document.all[')==0 && document.all==null))
-         store = 'document'+store.substring(store.lastIndexOf('.'),store.length);
-         obj = eval(store);
-    if (obj != null) {
-   	   switcher[keep++] = obj;
-      switcher[keep++] = (history==null || history[keep-1]!=obj)?obj.src:history[keep];
-      obj.src = SwitchImg.arguments[rem+2];
-  } }
-  document.Data = switcher;
-} //end
-
-function RestoreImg()
-{ //start
-  if (document.Data != null)
-    for (var rem=0; rem<(document.Data.length-1); rem+=2)
-      document.Data[rem].src=document.Data[rem+1];
-} //end
-</script>
-  <body bgcolor="#ffffff" CLASS="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
-	<table width="790" cellspacing="0" cellpadding="0" border="0">
-	  <tr>
-		<td width="790" background="images/navtop.gif" valign="top"><img src="images/a.gif" width="790" height="89" name="myimg1" border="0" usemap="#navtop"></td>
-		<map name="navtop">
-		<area shape=rect coords="15,15 285,33" href="index.htm" title="Homepage" onMouseOut="RestoreImg()" onMouseOver="SwitchImg('document.myimg1','document.myimg1','images/navtopo.gif')">
-		<area shape=rect coords="1,42 106,65" href="10/index.htm" onMouseOut="RestoreImg()" onMouseOver="SwitchImg('document.myimg1','document.myimg1','images/navtop1o.gif')">
-		<area shape=rect coords="107,42 235,65" href="20/index.htm" onMouseOut="RestoreImg()" onMouseOver="SwitchImg('document.myimg1','document.myimg1','images/navtop2o.gif')">
-		<area shape=rect coords="236,42 323,65" href="30/index.htm" onMouseOut="RestoreImg()" onMouseOver="SwitchImg('document.myimg1','document.myimg1','images/navtop3o.gif')">
-		</map>
-	  </tr>
-	</table>
-	<table width="790" background="images/bg_m0.gif" cellspacing="0" cellpadding="0" border="0">
-	  <tr>
-		<td width="30" valign="top"><div class="main00a">&raquo;</div></td>
-		<td width="230" valign="top">
-		  <div class="main00b">
-		  <span class="main00c"><a href="10/index.htm">Learn more about JBI and SOA</a></span><br />
-		  Find out how Java<span class="tm"><sup>TM</sup></span> Business Integration (JBI) reduces application development and speeds time to market for SOA applications.
-		  </div>
-		</td>
-		<td width="30" valign="top"><div class="main00a">&raquo;</div></td>
-		<td width="230" valign="top">
-		  <div class="main00b">
-		  <span class="main00c"><a href="20/index.htm">Sun's JBI Partners</a></span><br />
-		  Get information about Sun's JBI iForce<span class="tm"><sup>SM</sup></span> partners, products, and resources.
-		  </div>
-		</td>
-		<td width="30" valign="top"><div class="main00a">&raquo;</div></td>
-		<td width="230" valign="top">
-		  <div class="main00b">
-		  <span class="main00c"><a href="30/index.htm">Install SDK</a></span><br />
-		  Install the JBI Software Developer's Kit (SDK), download the JBI white paper, join the JBI forum, and get the most recent JBI SDK updates.
-		  </div>
-		</td>
-		<td width="10" valign="top"><img src="images/a.gif" width="10" height="466"></td>
-	  </tr>
-	</table>
-	<table width="790" cellspacing="0" cellpadding="0" border="0">
-	  <tr>
-		<td width="790" valign="top"><img src="images/navbot.gif" width="790" height="25" border="0"></td>
-	  </tr>
-	</table>
-  </body>
+<!DOCTYPE HTML
+	PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<html lang="en-US">
+
+<head>
+
+	<title>Sun Microsystems Java Business Integration Technology</title>
+
+	<meta name="keywords"
+		content="sun microsystems, sun, java, java computing, solaris, sparc, unix, jini, computer systems, server, mission critical, RAS, high availability, cluster, workgroup server, desktop, workstation, storage, backup solutions, network computer, network computing, hardware, software, service, consulting, support, training, compiler, jdk, technical computing, scientific computing, high performance, enterprise computing, staroffice, starportal, sun ray">
+
+	<meta name="description" content="Sun Microsystems, Inc. The Network Is The Computer[tm].">
+
+	<meta http-equiv="content-language" content="en-US">
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/default.css">
+
+	<!--stopindex-->
+
+</head>
+
+<script language="JavaScript" TYPE="text/javascript">
+
+	function SwitchImg() { //start
+
+		var rem, keep = 0, store, obj, switcher = new Array, history = document.Data;
+
+		for (rem = 0; rem < (SwitchImg.arguments.length - 2); rem += 3) {
+
+			store = SwitchImg.arguments[(navigator.appName == 'Netscape') ? rem : rem + 1];
+
+			if ((store.indexOf('document.layers[') == 0 && document.layers == null) ||
+
+				(store.indexOf('document.all[') == 0 && document.all == null))
+
+				store = 'document' + store.substring(store.lastIndexOf('.'), store.length);
+
+			obj = eval(store);
+
+			if (obj != null) {
+
+				switcher[keep++] = obj;
+
+				switcher[keep++] = (history == null || history[keep - 1] != obj) ? obj.src : history[keep];
+
+				obj.src = SwitchImg.arguments[rem + 2];
+
+			}
+		}
+
+		document.Data = switcher;
+
+	} //end
+
+
+
+	function RestoreImg() { //start
+
+		if (document.Data != null)
+
+			for (var rem = 0; rem < (document.Data.length - 1); rem += 2)
+
+				document.Data[rem].src = document.Data[rem + 1];
+
+	} //end
+
+</script>
+
+<body bgcolor="#ffffff" CLASS="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+	<table width="790" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+
+			<td width="790" background="images/navtop.gif" valign="top"><img src="images/a.gif" width="790" height="89"
+					name="myimg1" border="0" usemap="#navtop"></td>
+
+			<map name="navtop">
+
+				<area shape=rect coords="15,15 285,33" href="index.htm" title="Homepage" onMouseOut="RestoreImg()"
+					onMouseOver="SwitchImg('document.myimg1','document.myimg1','images/navtopo.gif')">
+
+				<area shape=rect coords="1,42 106,65" href="10/index.htm" onMouseOut="RestoreImg()"
+					onMouseOver="SwitchImg('document.myimg1','document.myimg1','images/navtop1o.gif')">
+
+				<area shape=rect coords="107,42 235,65" href="20/index.htm" onMouseOut="RestoreImg()"
+					onMouseOver="SwitchImg('document.myimg1','document.myimg1','images/navtop2o.gif')">
+
+				<area shape=rect coords="236,42 323,65" href="30/index.htm" onMouseOut="RestoreImg()"
+					onMouseOver="SwitchImg('document.myimg1','document.myimg1','images/navtop3o.gif')">
+
+			</map>
+
+		</tr>
+
+	</table>
+
+	<table width="790" background="images/bg_m0.gif" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+
+			<td width="30" valign="top">
+				<div class="main00a">&raquo;</div>
+			</td>
+
+			<td width="230" valign="top">
+
+				<div class="main00b">
+
+					<span class="main00c"><a href="10/index.htm">Learn more about JBI and SOA</a></span><br />
+
+					Find out how Java<span class="tm"><sup>TM</sup></span> Business Integration (JBI) reduces application
+					development and speeds time to market for SOA applications.
+
+				</div>
+
+			</td>
+
+			<td width="30" valign="top">
+				<div class="main00a">&raquo;</div>
+			</td>
+
+			<td width="230" valign="top">
+
+				<div class="main00b">
+
+					<span class="main00c"><a href="20/index.htm">Sun's JBI Partners</a></span><br />
+
+					Get information about Sun's JBI iForce<span class="tm"><sup>SM</sup></span> partners, products, and resources.
+
+				</div>
+
+			</td>
+
+			<td width="30" valign="top">
+				<div class="main00a">&raquo;</div>
+			</td>
+
+			<td width="230" valign="top">
+
+				<div class="main00b">
+
+					<span class="main00c"><a href="30/index.htm">Install SDK</a></span><br />
+
+					Install the JBI Software Developer's Kit (SDK), download the JBI white paper, join the JBI forum, and get the
+					most recent JBI SDK updates.
+
+				</div>
+
+			</td>
+
+			<td width="10" valign="top"><img src="images/a.gif" width="10" height="466"></td>
+
+		</tr>
+
+	</table>
+
+	<table width="790" cellspacing="0" cellpadding="0" border="0">
+
+		<tr>
+
+			<td width="790" valign="top"><img src="images/navbot.gif" width="790" height="25" border="0"></td>
+
+		</tr>
+
+	</table>
+
+</body>
+
 </html>
